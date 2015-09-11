@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+
+.siteHeader{
+	height: 130px;
+
+}
+.logo {
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+h1 , h2, h3 {
+	color: white;
+	text-align: center;
+}
+
+h1{
+	font-family: "Helvetica Neue",  sans-serif;
+	font-size: 5.5em; /*75px*/
+
+}
+h2 {
+	font-size:1.428571em; /*20px*/ 
+	font-family: 'PT Mono', 'Arvo', serif; 
+}
+
+html, body {
+	height:100%;
+	width:100%;
+}
+
+.container-fluid {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0 ;
+}
+.header {
+	position: relative;
+	display:block;
+	background:url('images/bg1CoolerSm.png') center fixed; /*color, img, attachment, position,*/ 
+	height:100%;
+	width:100%;
+	background-size: 100% 100%;/*width height*/
+	overflow: hidden;
+}
+
+.slidePortion {
+	position: relative;
+	background: white;
+	text-align: center;
+	height:110%;
+	
+}
+.slidePortion h4{
+	font-size: 2em;
+	font-family: "Helvetica Neue",  sans-serif;
+	margin-top: 2em;
+	color: #575757;
+	font-weight: bold;
+}
+h3 a {
+	text-decoration: inherit;
+	font-size: 0.8em; /*16px*/
+}
+.slideHolder{
+	position:absolute;
+	background: #BFD6EC url('images/drawingBoard2.png') center; 
+	background-size: 100% 100%;
+	width:70%;
+	height:76%;
+	margin: auto 15%;
+}
+
+
+.box {
+	position:absolute;
+	border:7px solid white;
+	background: grey;
+	width:66%;
+	height:50%;
+	margin: 12% 17%;
+	box-shadow: 0 1px 1px 1px grey;
+}
+
+.slide1 {
+	height:100%;
+	width: 100%;
+}
+
+.about{
+	position: relative;
+	background: #F2F2F2;
+	background-size: 100% 100%;
+	text-align: center;
+	height:100%;
+}
+
+.aboutPhotoFrame{
+	height:200px;
+	background: white;
+	position: relative;
+	border-radius: 60%;
+	width: 200px;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); /* gives some transparent border*/
+	margin-top: 5em;
+}
+
+.samPhoto{
+	height:inherit;
+	width: inherit;
+	border-radius: inherit;
+}
+
+.center {				/* to center stuff*/
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.aboutMe {
+	font-size: 1.114285em;  /*16px*/
+	line-height: 1.8em;
+	padding: 4% 10%;
+	font-family: 'Arvo', serif;
+}
+.aboutMe span{
+	font-weight: bold;
+}
+
+
+
+/*--------------------------------------------------------------------
+Media Queries 
+---------------------------------------------------------------*/
+
+@media screen and (max-width:1390px) {
+	/*.header {
+
+		background: #306DA9 url(images/bg1CoolerSm.png) no-repeat top;
+		background-size: 120%;
+		height:100%;
+		width:100%;
+	} */
+
+	h1 {
+		font-size: 4.7em;
+	}
+
+
+}
+@media screen and (max-width:1150px) {
+	/*.header {
+
+		background: #306DA9 url(images/bg1CoolerSm.png) no-repeat top;
+		background-size: 140%;
+		height:100%;
+		width:100%;
+	}
+		*/
+	h1 {
+		font-size: 5.5em;
+	}
+
+	h2 {
+	font-size:1.3em; /*20px*/ 
+	font-family: PT Mono, serif; 
+	}
+	}
+@media screen and (max-width:1005px) {
+	/*
+	.header{
+		background: #306DA9 url(images/bg1CoolerSm.png) no-repeat top;
+		background-size: 140%;
+		height:100%;
+		width:100%;
+	}
+	*/
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+	font-size:1.1em; /*20px*/ 
+	font-family: PT Mono, serif; 
+	}
+	h3 a {
+	text-decoration: inherit;
+	font-size: 0.6em; /*16px*/
+}
+}
+
+@media screen and (max-width:750px) {
+	/*
+	.header {
+
+		background: #306DA9 url(images/bg1CoolerSm.png) no-repeat top;
+		background-size: 200%;
+		height:100%;
+		width:100%;
+	}
+	*/
+
+	h1 {
+		font-size: 3em;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+	.header {
+		background: white url(images/bg1CoolerSm.png) no-repeat top;
+		background-size: 400%;
+		height:100%;
+		width:100%;
+	}
+	h2 {
+		font-size:1.3em;  
+		font-family: 'PT Mono', 'Arvo', serif; 
+		padding-top: 1em;
+	}
+	.slidePortion h4{
+		font-size: 2em;
+		font-family: "Helvetica Neue",  sans-serif;
+		margin: 2em 1em;
+		color: #575757;
+		font-weight: bold;
+
+	}
+	.slideHolder{
+		position:absolute;
+		background: #BFD6EC url('images/drawingBoard2.png') center; 
+		background-size: 100% 120%;
+		width:70%;
+		height:76%;
+		margin: auto 15%;
+	}
+
+	.slidePortion {
+		position: relative;
+		background: white;
+		text-align: center;
+		height:105%;
+	}
+
+	.box {
+		position:absolute;
+		border:7px solid white;
+		background: grey;
+		width:66%;
+		height:64%;
+		margin: 12% 17%;
+		box-shadow: 0 1px 1px 1px grey;
+	}
+	.about{
+		position: relative;
+		background: #F2F2F2;
+		background-size: 100% 100%;
+		text-align: center;
+		height:150%;
+	}
+}
+
+
